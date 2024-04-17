@@ -1,9 +1,7 @@
 
 <template>
 <main>
-    <p>
-        main
-    </p>
+  
 </main>
 </template>
 
