@@ -1,19 +1,46 @@
 <template>
-  <h1 class="text-center">Ciao</h1>
-  <i class="fa fa-solid fa-home"></i>
+  <HeaderComponent />
+  <MainComponent />
 </template>
 
 <script>
-  export default {
-    name: 'App'
-  }
+import HeaderComponent from './components/HeaderComponent.vue';
+import MainComponent from './components/MainComponent.vue';
+
+import axios from 'axios';
+import { store } from '../store';
+
+export default {
+  name: 'App',
+  components: {
+    HeaderComponent,
+    MainComponent
+  },
+  data() {
+    return{
+      store,
+    }
+  },
+  methods: {
+    getApi(){
+      axios.get(store.apiUrl)
+      .then(result => {
+        console.log(result.data)
+      })
+    }
+  },
+  mounted(){
+
+  },
+  computed(){
+
+  },
+}
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>
-
-
 
 <!-- api
 bf23213818e51de206214cfbb2cb2c83

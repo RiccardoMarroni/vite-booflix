@@ -1,10 +1,10 @@
 
 <template>
-<header>
-    <h1>
-        Netflix
-    </h1>
-</header>
+<main>
+    <p>
+        main
+    </p>
+</main>
 </template>
 
 <script>
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
- 
+  
 
 
 </style>
